@@ -11,6 +11,7 @@ This implementation follows the methods and techniques described in Bishop's boo
 
 1. **Bayesian_Linear_Regression.m**: Contains the main implementation of Bayesian Linear Regression.
 2. **parameter_optimization.m**: A script for learning the hyperparameters $\beta$ and $\alpha$ from the data.
+3. **data.txt**:  A provided dataset to test and evaluate the implementation.
 
 ## Getting Started
 
@@ -22,7 +23,7 @@ This implementation follows the methods and techniques described in Bishop's boo
 
 ## Dataset
 
-In this repository, you'll find a dataset file named "data.txt" containing N=30 noisy samples of the function $f(x) = cos(2 \pi \xi) - (3\xi - 2)^2$.
+In this repository, you'll find a dataset file named "data.txt" containing N=30 noisy samples of the function $f(x) = cos(2 \pi \cxi) - (3\cxi - 2)^2$.
 The dataset was generated within the range [0, 1] with added noise.
 
 ### File Format
