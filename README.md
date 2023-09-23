@@ -23,7 +23,7 @@ This implementation follows the methods and techniques described in Bishop's boo
 
 ## Dataset
 
-In this repository, you'll find a dataset file named "data.txt" containing N=30 noisy samples of the function $f(x) = cos(2 \pi \chi) - (3\chi - 2)^2$.
+In this repository, you'll find a dataset file named "data.txt" containing N=30 noisy samples of the function $f(x) = cos(2 \pi x) - (3x - 2)^2$.
 The dataset was generated within the range [0, 1] with added noise.
 
 ### File Format
