@@ -40,7 +40,7 @@ for i = 1:M
     Phi_Gaussian(:, i) = exp(-(X_data - mu(i)).^2 / (2*(sigma(i)^2)));
 end
 
-% Optimal parameters alpha and beta for the Gaussian case (Bonus).
+% Optimal parameters alpha and beta for the Gaussian case.
 [alpha_Gaussian, beta_Gaussian] = parameter_optimization(Phi_Gaussian,t,alpha,beta);
 
 % Gaussian basis functions.
