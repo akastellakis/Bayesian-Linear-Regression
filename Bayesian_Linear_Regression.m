@@ -10,9 +10,9 @@ X_data = data(:,1);
 N = length(X_data);
 t = data(:,2);
 
-%=====
-% (a)
-%=====
+%=========
+% Step (a)
+%=========
 % Set constant values.
 % Reminder: precision = 1/variance.
 % alpha, precision of the prior
@@ -20,9 +20,9 @@ alpha = 1e-1;
 % beta,  precision of the likelihood
 beta = 5;        
 
-%=====
-% (b)
-%=====
+%=========
+% Step (b)
+%=========
 % Use two sets of basis functions, one Gaussian and one sigmoidal, 
 % with exactly M = 10 functions in each case. 
 M = 10;
@@ -31,9 +31,9 @@ M = 10;
 mu = (0.1:0.1:1)';
 sigma = (0.1:0.1:1)';
 
-%=====
-% (c)
-%=====
+%=========
+% Step (c)
+%=========
 % Create the design matrix for Gaussian basis functions
 Phi_Gaussian = zeros(N, M);
 for i = 1:M
@@ -85,9 +85,9 @@ predictive_distribution_Sigmoidal = @(x) Gausian_Distribution(x, ( mN_Sigmoidal'
     Phi_Sigmoidal_x( x, mu, sigma ), ( 1 / beta_Sigmoidal +  (Phi_Sigmoidal_x( x, mu, sigma )') ...
             * SN_Sigmoidal *  Phi_Sigmoidal_x(x, mu, sigma)));
 
-%=====
-% (d)
-%=====
+%=========
+% Step (d)
+%=========
 
 % Number of data we shall use to learn.
 N = [10 30];
@@ -192,9 +192,9 @@ for n = N
         'Location', 'best', 'Interpreter','latex', 'Fontsize', 14);
 end
 
-%=====  
-% (e)
-%=====
+%=========
+% Step (e)
+%=========
 
 for n = N
     % Gaussian basis functions.
